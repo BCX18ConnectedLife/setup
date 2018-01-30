@@ -52,27 +52,14 @@ footer {
     padding: 0 1em;
 }
 
-.table {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+.introImage {
+    width: auto;
+    height: 737px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.table_cellOne {
-    display: table-cell;
-    width: 25%;
-}
-
-.table_cellTwo {
-    display: table-cell;
-    width: 75%;
-    vertical-align: center;
-    border: groove;
-}
-
-.table_cellThree {
-    display: table-cell;
-    width: 25%;
+.dialog {
 
 }
-
