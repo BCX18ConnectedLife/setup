@@ -1,7 +1,6 @@
 function changeView() {
     var api = document.getElementById("api");
     var intro = document.getElementById("intro");
-    var btn = document.getElementById("btnChangeView");
     var tit = document.getElementById("titleText");
 
     if (api.style.display === "none") {

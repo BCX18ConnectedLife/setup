@@ -1,5 +1,78 @@
-.container {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 25% 50% 25%
+
+* {
+    font-family: "Open Sans";
+    box-sizing: border-box;
 }
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.headerStripe{
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+.headerLogo {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+header {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+main {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+footer {
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
+}
+
+.footerStripe {
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+}
+
+.container {
+    margin: 1em auto;
+    padding: 0 1em;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table_cellOne {
+    display: table-cell;
+    width: 25%;
+}
+
+.table_cellTwo {
+    display: table-cell;
+    width: 75%;
+    vertical-align: center;
+    border: groove;
+}
+
+.table_cellThree {
+    display: table-cell;
+    width: 25%;
+
+}
+
