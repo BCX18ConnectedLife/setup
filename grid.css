@@ -17,7 +17,7 @@ body {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
-.headerStripe{
+.headerStripe {
     grid-column: 1 / 5;
     grid-row: 1 / 2;
 }
@@ -62,4 +62,9 @@ footer {
 
 .dialog {
 
+}
+
+area:hover {
+    fill: #08427E;
+    opacity: 0.5;
 }

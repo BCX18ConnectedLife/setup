@@ -16,10 +16,15 @@ function changeView() {
 
 function openPopup() {
     var test = document.getElementById("dialogAgri");
+    var area = document.getElementById("area1");
     if(test.style.display === "none"){
         test.style.display = "block";
+        area.style.fill = "red";
+
     }else {
         test.style.display = "none";
     }
 
 }
+
+

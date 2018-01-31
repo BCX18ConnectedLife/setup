@@ -32,21 +32,38 @@
     <hr>
     <div class="container">
         <div id="intro">
-            <img class="introImage" src="assets/BCX_2018.jpg" usemap="#image-map">
-            <map name="image-map">
-                <area onmouseover="openPopup()" onmouseout="openPopup()" target="" alt="" title="" href=""
-                      coords="136,513,152,521,170,527,186,532,203,539,215,543,229,548,252,536,271,525,287,516,299,505,311,499,284,489,249,481,220,485"
-                      shape="poly">
-                <area target="" alt="" title="traffic" href="" coords="434,737,435,576,393,572,318,737,416,737" shape="poly">
-                <area target="" alt="" title="constructing" href=""
-                      coords="465,600,589,619,615,613,655,608,654,578,625,541,599,509,559,499,487,539,460,559"
-                      shape="poly">
-                <area target="" alt="" title="drone" href=""
-                      coords="336,365,355,381,376,384,397,374,410,361,402,341,379,331,354,331,331,341" shape="poly">
-                <area target="" alt="" title="energy" href=""
-                      coords="144,379,152,320,171,301,164,265,154,234,171,203,183,169,139,169,122,218,78,221,58,226,51,273,12,284,10,302,39,384,87,397"
-                      shape="poly">
-            </map>
+            <svg class="introImage" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 0 838 737">
+                <defs>
+                    <style>
+                        polygon:hover {
+                            fill: #08427E;
+                            opacity: 0.5;
+                            cursor: pointer;
+                        }
+                    </style>
+                </defs>
+                <image width="838" height="738" xlink:href="assets/BCX_2018.jpg"></image>
+
+                <!-- Row 1  -->
+                <a xlink:href="" xlink:show="new">
+                    <polygon points="136,513,152,521,170,527,186,532,203,539,215,543,229,548,252,536,271,525,287,516,299,505,311,499,284,489,249,481,220,485" opacity="0"/>
+                </a>
+                <a xlink:href="" xlink:show="new">
+                    <polygon points="434,737,435,576,393,572,318,737,416,737" opacity="0"/>
+                </a>
+                <a xlink:href="" xlink:show="new">
+                    <polygon points="465,600,589,619,615,613,655,608,654,578,625,541,599,509,559,499,487,539,460,559" opacity="0"/>
+                </a>
+                <a xlink:href="" xlink:show="new">
+                    <polygon points="336,365,355,381,376,384,397,374,410,361,402,341,379,331,354,331,331,341" opacity="0"/>
+                </a>
+                <a xlink:href="" xlink:show="new">
+                    <polygon points="144,379,152,320,171,301,164,265,154,234,171,203,183,169,139,169,122,218,78,221,58,226,51,273,12,284,10,302,39,384,87,397" opacity="0"/>
+                </a>
+
+            </svg>
+
             <div id="dialogAgri" class="dialog">This is Agriculture!</div>
         </div>
         <div id="api">
@@ -58,6 +75,7 @@
                         rect:hover {
                             fill: #08427E;
                             opacity: 0.5;
+                            cursor: pointer;
                         }
                     </style>
                 </defs>
