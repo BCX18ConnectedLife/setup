@@ -1,4 +1,3 @@
-
 * {
     font-family: "Open Sans";
     box-sizing: border-box;
@@ -50,21 +49,4 @@ footer {
 .container {
     margin: 1em auto;
     padding: 0 1em;
-}
-
-.introImage {
-    width: auto;
-    height: 737px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.dialog {
-
-}
-
-area:hover {
-    fill: #08427E;
-    opacity: 0.5;
 }

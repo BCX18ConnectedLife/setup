@@ -1,0 +1,19 @@
+.introImage {
+    width: auto;
+    height: 737px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:visible;
+}
+
+.tooltip {
+    pointer-events:none;
+    opacity:0;
+    transition: opacity 0.5s;
+    background: white;
+    border:solid darkgray;
+    position: absolute;
+    max-width: 16em;
+    text-align:center;
+}

@@ -6,13 +6,14 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
     <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="svg.css">
     <link rel="shortcut icon" href="http://www.bosch.com/media/_tech/layout/images/icons/favicon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script type="text/javascript" src="lib/d3.min.js"></script>
+    <script type="text/javascript" src="logic.js"></script>
 </head>
 <body>
 
-<script src="logic.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <div class="headerStripe">
     <image width="100%" height="auto" src="assets/header.png"></image>
@@ -32,7 +33,7 @@
     <hr>
     <div class="container">
         <div id="intro">
-            <svg class="introImage" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <svg id="introSvg" class="introImage" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
                  viewBox="0 0 838 737">
                 <defs>
@@ -46,40 +47,44 @@
                 </defs>
                 <image width="838" height="738" xlink:href="assets/BCX_2018.jpg"></image>
 
-                <!-- Row 1  -->
-                <a>
-                    <polygon
-                        points="136,513,152,521,170,527,186,532,203,539,215,543,229,548,252,536,271,525,287,516,299,505,
+                <g id="polygon-group">
+                    <a>
+                        <polygon id="agriculture" title="Information about Agriculture"
+                                 points="136,513,152,521,170,527,186,532,203,539,215,543,229,548,252,536,271,525,287,516,299,505,
                         311,499,284,489,249,481,220,485"
-                        opacity="0"/>
-                </a>
-                <a>
-                    <polygon points="434,737,435,576,393,572,318,737,416,737" opacity="0"/>
-                </a>
-                <a>
-                    <polygon points="465,600,589,619,615,613,655,608,654,578,625,541,599,509,559,499,487,539,460,559"
-                             opacity="0"/>
-                </a>
-                <a>
-                    <polygon points="336,365,355,381,376,384,397,374,410,361,402,341,379,331,354,331,331,341"
-                             opacity="0"/>
-                </a>
-                <a>
-                    <polygon
-                        points="144,379,152,320,171,301,164,265,154,234,171,203,183,169,139,169,122,218,78,221,58,226,51,
+                                 opacity="0"></polygon>
+                    </a>
+                    <a>
+                        <polygon id="traffic" title="Information about Traffic" points="434,737,435,576,393,572,318,737,416,737" opacity="0"/>
+                    </a>
+                    <a>
+                        <polygon id="constructing" title="Information about Constructing"
+                                 points="465,600,589,619,615,613,655,608,654,578,625,541,599,509,559,499,487,539,460,559"
+                                 opacity="0"/>
+                    </a>
+                    <a>
+                        <polygon id="drone" title="Information about Drones"
+                                 points="336,365,355,381,376,384,397,374,410,361,402,341,379,331,354,331,331,341"
+                                 opacity="0"/>
+                    </a>
+                    <a>
+                        <polygon id="energy" title="Information about Energy"
+                                 points="144,379,152,320,171,301,164,265,154,234,171,203,183,169,139,169,122,218,78,221,58,226,51,
                         273,12,284,10,302,39,384,87,397"
-                        opacity="0"/>
-                </a>
+                                 opacity="0"/>
+                    </a>
 
-                <a>
-                    <polygon
-                        points="546,396,545,275,551,272,551,255,586,251,586,273,593,274,596,282,604,282,607,241,617,219,
+                    <a>
+                        <polygon id="building" title="Information about Connected Buildings"
+                                 points="546,396,545,275,551,272,551,255,586,251,586,273,593,274,596,282,604,282,607,241,617,219,
                         650,221,659,245,659,393,609,404,545,405"
-                        opacity="0"/>
-                </a>
+                                 opacity="0"/>
+                    </a>
+                </g>
             </svg>
 
-            <div id="dialogAgri" class="dialog">This is Agriculture!</div>
+            <div id="tool" class="tooltip"/>
+
         </div>
         <div id="api">
             <h3 style="text-align: center">Click on the api icons to access the specs</h3>
@@ -147,6 +152,7 @@
                     <rect x="1491" y="547" opacity="0" width="75" height="40"/>
                 </a>
             </svg>
+            <script type="text/javascript" src="svg.js"></script>
         </div>
     </div>
 </main>
@@ -167,8 +173,8 @@
 <script>
     document.getElementById("api").style.display = "none";
     document.getElementById("intro").style.display = "block";
-    document.getElementById("dialogAgri").style.display = "none";
 </script>
+<script type="text/javascript" src="svg.js"></script>
 
 </body>
 </html>
