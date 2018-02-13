@@ -1,5 +1,4 @@
 h1 {
-	font-family: 'Open Sans';
 	font-size: 36px;
 	font-style: normal;
 	font-variant: normal;
@@ -7,7 +6,6 @@ h1 {
 	line-height: 26.4px;
 }
 h3 {
-	font-family: 'Open Sans';
 	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -36,6 +34,25 @@ a:hover {
 }
 
 #viewButton {
+    background-color: #b90276;
     display: block;
     margin: auto;
+    border: 3px solid #b90276;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+    width: 150px;
+    font-weight: 500;
 }
+
+#viewButton:hover {
+    background-color: white;
+    color: black;
+}
+
+
