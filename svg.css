@@ -1,6 +1,6 @@
 #introSvg {
     width: auto;
-    height: 737px;
+    height: 70vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -17,4 +17,10 @@
     max-width: 16em;
     text-align:center;
     padding: 0.5em;
+}
+
+#setupSvg {
+    height: 70vh;
+    display: block;
+    margin: auto;
 }
