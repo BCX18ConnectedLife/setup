@@ -24,3 +24,18 @@ a:hover {
     color: #23527c;
     text-decoration: underline;
 }
+
+#titleText {
+    color: black;
+    text-decoration: none;
+}
+
+#titleText:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#viewButton {
+    display: block;
+    margin: auto;
+}
